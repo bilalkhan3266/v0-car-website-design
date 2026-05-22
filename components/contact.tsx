@@ -60,7 +60,7 @@ export function Contact() {
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
             Contact Us
           </h2>
-          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground max-w-2xl mx-auto">
             Have questions? We&apos;d love to hear from you. Reach out to our team today.
           </p>
         </div>

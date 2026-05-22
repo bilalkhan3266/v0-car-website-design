@@ -20,7 +20,7 @@ export function Hero() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-foreground leading-tight">
                 Elevate Your Drive
               </h1>
-              <p className="text-lg md:text-xl text-foreground/70 leading-relaxed">
+              <p className="text-lg md:text-xl text-foreground leading-relaxed">
                 Premium vehicles and world-class service at CHAND MOTORS G-9. Experience the perfect blend of luxury, performance, and reliability.
               </p>
             </div>
@@ -42,15 +42,15 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               <div>
                 <p className="text-3xl font-bold text-accent">500+</p>
-                <p className="text-sm text-foreground/60">Happy Customers</p>
+                <p className="text-sm text-foreground">Happy Customers</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-accent">20+</p>
-                <p className="text-sm text-foreground/60">Years Experience</p>
+                <p className="text-sm text-foreground">Years Experience</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-accent">24/7</p>
-                <p className="text-sm text-foreground/60">Support Available</p>
+                <p className="text-sm text-foreground">Support Available</p>
               </div>
             </div>
           </div>

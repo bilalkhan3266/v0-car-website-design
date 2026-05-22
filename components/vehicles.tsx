@@ -57,7 +57,7 @@ export function Vehicles() {
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
             Premium Vehicles
           </h2>
-          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground max-w-2xl mx-auto">
             Discover our curated selection of premium vehicles, each engineered for performance and designed for excellence.
           </p>
         </div>
@@ -91,28 +91,28 @@ export function Vehicles() {
                   <div className="flex items-center space-x-3">
                     <Zap className="w-5 h-5 text-accent" />
                     <div>
-                      <p className="text-xs text-foreground/60">Power</p>
+                      <p className="text-xs text-foreground/80">Power</p>
                       <p className="font-semibold text-sm text-foreground">{vehicle.specs.power}</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Gauge className="w-5 h-5 text-accent" />
                     <div>
-                      <p className="text-xs text-foreground/60">Speed</p>
+                      <p className="text-xs text-foreground/80">Speed</p>
                       <p className="font-semibold text-sm text-foreground">{vehicle.specs.speed}</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Users className="w-5 h-5 text-accent" />
                     <div>
-                      <p className="text-xs text-foreground/60">Capacity</p>
+                      <p className="text-xs text-foreground/80">Capacity</p>
                       <p className="font-semibold text-sm text-foreground">{vehicle.specs.seats}</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Shield className="w-5 h-5 text-accent" />
                     <div>
-                      <p className="text-xs text-foreground/60">Warranty</p>
+                      <p className="text-xs text-foreground/80">Warranty</p>
                       <p className="font-semibold text-sm text-foreground">{vehicle.specs.warranty}</p>
                     </div>
                   </div>
@@ -120,7 +120,7 @@ export function Vehicles() {
 
                 {/* Features */}
                 <div className="space-y-2">
-                  <p className="text-xs font-semibold text-foreground/60 uppercase">Key Features</p>
+                  <p className="text-xs font-semibold text-foreground/80 uppercase">Key Features</p>
                   <div className="flex flex-wrap gap-2">
                     {vehicle.features.map((feature) => (
                       <span key={feature} className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full">

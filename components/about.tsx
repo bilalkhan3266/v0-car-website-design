@@ -38,16 +38,16 @@ export function About() {
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
                 Your Trusted Automotive Partner
               </h2>
-              <p className="text-lg text-foreground/70 leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed">
                 For over 20 years, CHAND MOTORS G-9 has been serving customers with premium vehicles and exceptional service. Our commitment to excellence has made us a trusted name in the automotive industry.
               </p>
             </div>
 
             <div className="space-y-4">
-              <p className="text-foreground/70 leading-relaxed">
+              <p className="text-foreground leading-relaxed">
                 We believe in building long-term relationships with our customers. Every vehicle in our inventory is carefully selected and thoroughly inspected to ensure the highest quality standards.
               </p>
-              <p className="text-foreground/70 leading-relaxed">
+              <p className="text-foreground leading-relaxed">
                 Our team of certified technicians and knowledgeable sales professionals are dedicated to providing you with an exceptional experience every time you visit.
               </p>
             </div>
@@ -56,15 +56,15 @@ export function About() {
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               <div>
                 <p className="text-3xl font-bold text-accent">20+</p>
-                <p className="text-sm text-foreground/60">Years in Business</p>
+                <p className="text-sm text-foreground">Years in Business</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-accent">500+</p>
-                <p className="text-sm text-foreground/60">Vehicles Sold</p>
+                <p className="text-sm text-foreground">Vehicles Sold</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-accent">98%</p>
-                <p className="text-sm text-foreground/60">Customer Satisfaction</p>
+                <p className="text-sm text-foreground">Customer Satisfaction</p>
               </div>
             </div>
           </div>

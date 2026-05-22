@@ -53,7 +53,7 @@ export function Services() {
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
             Professional Services
           </h2>
-          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground max-w-2xl mx-auto">
             From routine maintenance to complex repairs, our certified technicians deliver excellence in every service.
           </p>
         </div>
@@ -77,7 +77,7 @@ export function Services() {
                   {service.title}
                 </h3>
                 
-                <p className="text-foreground/60 text-sm mb-6 leading-relaxed">
+                <p className="text-foreground text-sm mb-6 leading-relaxed">
                   {service.description}
                 </p>
 
