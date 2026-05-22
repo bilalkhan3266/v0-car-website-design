@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen w-full pt-20 bg-gradient-to-b from-primary/5 via-background to-background flex items-center overflow-hidden">
+    <section className="relative min-h-screen w-full pt-20 bg-background flex items-center overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl opacity-20 -z-10" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-20 -z-10" />
