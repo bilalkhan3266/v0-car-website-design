@@ -3,6 +3,7 @@
 import { ArrowDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Hero() {
   return (
@@ -56,17 +57,15 @@ export function Hero() {
 
           {/* Right Image */}
           <div className="relative h-96 md:h-full min-h-96 flex items-center justify-center">
-            <div className="relative w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 bg-[url('data:image/svg+xml+base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0gNDAgMCBMIDAgMCAwIDQwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMC41IiBvcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-50" />
-              <div className="relative w-full h-full flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-accent font-bold mb-4">FEATURED VEHICLE</p>
-                  <p className="text-3xl font-serif text-foreground font-semibold">
-                    Luxury Sedan 2024
-                  </p>
-                  <p className="text-foreground/60 mt-2">Premium performance meets elegance</p>
-                </div>
-              </div>
+            <div className="relative w-full h-full bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/hero-car.jpg"
+                alt="Premium sports car"
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
           </div>
         </div>

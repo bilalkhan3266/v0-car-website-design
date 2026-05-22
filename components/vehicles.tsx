@@ -3,13 +3,14 @@
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Zap, Gauge, Users, Shield } from 'lucide-react'
+import Image from 'next/image'
 
 const vehicles = [
   {
     id: 1,
     name: 'Luxury Sedan 2024',
     price: 'Starting at $65,000',
-    image: 'bg-gradient-to-br from-slate-800 to-slate-900',
+    image: '/luxury-sedan.jpg',
     specs: {
       power: '450 HP',
       speed: '0-60 in 4.2s',
@@ -22,7 +23,7 @@ const vehicles = [
     id: 2,
     name: 'Performance SUV 2024',
     price: 'Starting at $75,000',
-    image: 'bg-gradient-to-br from-amber-900 to-amber-950',
+    image: '/performance-suv.jpg',
     specs: {
       power: '520 HP',
       speed: '0-60 in 3.8s',
@@ -35,7 +36,7 @@ const vehicles = [
     id: 3,
     name: 'Electric Crossover 2024',
     price: 'Starting at $55,000',
-    image: 'bg-gradient-to-br from-green-900 to-green-950',
+    image: '/electric-crossover.jpg',
     specs: {
       power: '400 HP',
       speed: '0-60 in 5.1s',
@@ -66,11 +67,14 @@ export function Vehicles() {
           {vehicles.map((vehicle) => (
             <Card key={vehicle.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 group border border-border/50">
               {/* Vehicle Image */}
-              <div className={`h-64 ${vehicle.image} relative overflow-hidden`}>
+              <div className="h-64 relative overflow-hidden">
+                <Image
+                  src={vehicle.image}
+                  alt={vehicle.name}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-white font-semibold">{vehicle.name}</p>
-                </div>
               </div>
 
               {/* Vehicle Details */}
